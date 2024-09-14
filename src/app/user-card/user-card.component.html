@@ -1,0 +1,18 @@
+<div class="card mb-3 text-center">
+  <!-- Centering the profile image -->
+  <div class="d-flex justify-content-center">
+    <img src="{{ user.image }}" class="card-img-top rounded-circle mt-3" alt="{{ user.username }}" style="width: 150px; height: 150px; object-fit: cover;">
+  </div>
+
+  <div class="card-body">
+    <!-- Display user details -->
+    <h5 class="card-title">{{ user.firstName }} {{ user.lastName }}</h5>
+    <p class="card-text"><strong>User Name:</strong> {{ user.username }}</p>
+    <p class="card-text"><strong>Email:</strong> {{ user.email }}</p>
+    <p class="card-text"><strong>Phone:</strong> {{ user.phone }}</p>
+    <p class="card-text"><strong>Birthdate:</strong> {{ user.birthDate }}</p>
+
+    <!-- Role badge with dynamic color -->
+    <span class="badge" [ngClass]="getRoleColor()">{{ user.role | titlecase }}</span>
+  </div>
+</div>

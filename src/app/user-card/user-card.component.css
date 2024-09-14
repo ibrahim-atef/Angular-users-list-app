@@ -1,0 +1,24 @@
+.card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #280f63;
+    border-radius: 50%;
+  }
+  
+  .card-body {
+    text-align: center;
+    
+  }
+  
+  .badge {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+  }
+
+  .card{
+    border: 1px solid #280f63;
+    background-color: #e4e4e4;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
